@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href="cal.css" type="text/css">
+        <script src="cal.js"></script>
+        <meat charset="utf-8">
+    </head>
+    <body>
+        <div id="cal">
+            <div id="vnos"> </div>
+                <table>
+                <tr>
+                    <td class ="operator" onclick="vnesi('+')">+</td>
+                    <td  class ="operator" onclick="vnesi('-')">-</td>
+                    <td  class ="operator" onclick="vnesi('*')">*</td>
+                    <td  class ="operator" onclick="vnesi('/')">/</td>
+                </tr>
+                <tr>
+                    <td class="num" onclick="vnesi('7')">7</td>
+                    <td class="num" onclick="vnesi('8')">8</td>
+                    <td class="num" onclick="vnesi('9')">9</td>
+                    <td id="ac" onclick="clean()">AC</td>
+                </tr>
+                <tr>
+                    <td class="num" onclick="vnesi('4')">4</td>
+                    <td class="num" onclick="vnesi('5')">5</td>
+                    <td class="num" onclick="vnesi('6')">6</td>
+                    <td id="rez" rowspan="3" onclick="result()">=</td>
+                </tr>
+                <tr>
+                    <td class="num" onclick="vnesi('1')">1</td>
+                    <td class="num" onclick="vnesi('2')">2</td>
+                    <td class="num" onclick="vnesi('3')">3</td>
+                </tr>
+                </table>
+
+        </div>
+
+    </body>
+</html>
